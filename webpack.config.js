@@ -4,6 +4,8 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+const postcss = require('postcss');
 
 module.exports = {
 	entry: './src/js/app.js',
@@ -45,6 +47,7 @@ module.exports = {
 		          'css-loader',
 		          // Compiles Sass to CSS
 		          'sass-loader',
+		          'postcss-loader',
 		        ],
 		    },
 		    {

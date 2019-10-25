@@ -2,3 +2,6 @@
 body{
 	background-color: red;
 }
+.a {
+  transition: 1s; /* will be prefixed */
+}
